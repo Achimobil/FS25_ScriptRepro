@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="95">
+    <author>Achimobil</author>
+    <version>0.0.0.1</version>
+
+    <title>
+        <en>Script collection</en>
+        <de>Skript Sammlung</de>
+    </title>
+
+    <description>
+        <en><![CDATA[My Skript collection]]></en>
+        <de><![CDATA[Meine Skript Sammlung
+]]></de>
+    </description>
+
+    <iconFilename>icon.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <storeItems>
+        <storeItem xmlFilename="EmptyPalletProduction.xml"/>
+    </storeItems>
+
+    <placeableSpecializations>
+        <!-- This entry is needed in your modDesc.xml for using the sunFollowingRotationSpecialization. Change the path in filename to where you place the script -->
+        <specialization name="sunFollowingRotationSpecialization" className="SunFollowingRotationSpecialization" filename="sunFollowingRotationSpecialization/sunFollowingRotationSpecialization.lua"/>
+    </placeableSpecializations>
+
+    <placeableTypes>
+        <!-- This entry is needed in your modDesc.xml for using the sunFollowingRotationSpecialization, use your own type here and select the proper parent-->
+        <type name="placeableWithSunFollowing" parent="placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="sunFollowingRotationSpecialization"/>
+        </type>
+    </placeableTypes>
+</modDesc>
