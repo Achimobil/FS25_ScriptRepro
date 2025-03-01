@@ -5,7 +5,6 @@ Author: Achimobil
 Date: 23.02.2025
 Version: 0.2.0.0
 
-
 Important:
 You are allowed to use this script without any changes in your own FS25 mods.
 Publish mods with this script is generall allowed for all mods which are not behind a "paywall".
