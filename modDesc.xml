@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="95">
+<modDesc descVersion="96">
     <author>Achimobil</author>
-    <version>0.0.0.1</version>
+    <version>0.0.0.2</version>
 
     <title>
         <en>Script collection</en>
@@ -10,8 +10,7 @@
 
     <description>
         <en><![CDATA[My Skript collection]]></en>
-        <de><![CDATA[Meine Skript Sammlung
-]]></de>
+        <de><![CDATA[Meine Skript Sammlung]]></de>
     </description>
 
     <iconFilename>icon.dds</iconFilename>
@@ -21,6 +20,11 @@
     <storeItems>
         <storeItem xmlFilename="EmptyPalletProduction.xml"/>
     </storeItems>
+
+    <extraSourceFiles>
+        <!-- This entry is needed to add fruits to a category by script -->
+        <sourceFile filename="AddFruitTypeToCategory.lua"/>
+    </extraSourceFiles>
 
     <placeableSpecializations>
         <!-- This entry is needed in your modDesc.xml for using the sunFollowingRotationSpecialization. Change the path in filename to where you place the script -->
