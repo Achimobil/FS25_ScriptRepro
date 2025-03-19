@@ -1,0 +1,2 @@
+copy TrafficLightCrossing.lua E:\LS25Profile\LS25ModTest\mods\FS25_riverBendSpringsEditByStevie\maps\Scripte\TrafficLightCrossing.lua
+start "" "C:\Program Files (x86)\Farming Simulator 2025\x64\FarmingSimulator2025Game.exe" -autoStartSavegameId 5 -cheats -profile E:\LS25Profile\LS25ModTest -devWarning -scriptDebug 
