@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="96">
+<modDesc descVersion="99">
     <author>Achimobil</author>
-    <version>0.0.0.2</version>
+    <version>0.0.0.3</version>
 
     <title>
         <en>Script collection</en>
@@ -29,12 +29,24 @@
     <placeableSpecializations>
         <!-- This entry is needed in your modDesc.xml for using the sunFollowingRotationSpecialization. Change the path in filename to where you place the script -->
         <specialization name="sunFollowingRotationSpecialization" className="SunFollowingRotationSpecialization" filename="sunFollowingRotationSpecialization/sunFollowingRotationSpecialization.lua"/>
+        <!-- This entry is needed in your modDesc.xml for using the RealMultiFruitSiloSpecialization. Change the path in filename to where you place the script -->
+        <specialization name="realMultiFruitSiloSpecialization" className="RealMultiFruitSiloSpecialization" filename="scripts/RealMultiFruitSiloSpecialization.lua"/>
+        <!-- This entry is needed in your modDesc.xml for using the DigitalClockSpezialisation. Change the path in filename to where you place the script -->
+        <specialization name="digitalClockSpecialization" className="DigitalClockSpezialisation" filename="scripts/DigitalClockSpezialisation.lua"/>
     </placeableSpecializations>
 
     <placeableTypes>
         <!-- This entry is needed in your modDesc.xml for using the sunFollowingRotationSpecialization, use your own type here and select the proper parent-->
         <type name="placeableWithSunFollowing" parent="placeable" filename="$dataS/scripts/placeables/Placeable.lua">
             <specialization name="sunFollowingRotationSpecialization"/>
+        </type>
+        <!-- This entry is needed in your modDesc.xml for using the RealMultiFruitSiloSpecialization, use your own type here and select the proper parent-->
+        <type name="MyMultiFruitSiloPlaceable" parent="silo" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="realMultiFruitSiloSpecialization"/>
+        </type>
+        <!-- This entry is needed in your modDesc.xml for using the DigitalClockSpezialisation, use your own type here and select the proper parent-->
+        <type name="MyDigitalClockPlaceable" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="digitalClockSpecialization"/>
         </type>
     </placeableTypes>
 </modDesc>
